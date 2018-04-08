@@ -1,0 +1,57 @@
+denoising
+:
+noise1 gaussian, s and p
+Input, Errors: 692.66 1982.10
+best, Errors: 11.00 6.00 181.45
+best, Errors: 11.00 6.00 190.25
+
+
+
+Input, Errors: 3118.10 3829.28
+best, Errors: 11.00 6.00 543.47
+best, Errors: 11.00 6.00 340.68
+
+noise2
+Input, Errors: 3118.10 3829.28
+best, Errors: 21.00 12.00 542.94
+best, Errors: 11.00 6.00 340.68
+MEvent. CASE!
+MEvent. CASE!
+>> evalDenoising
+noise1
+Input, Errors: 692.66 1982.10
+best, Errors: 21.00 20.00 147.44
+best, Errors: 31.00 20.00 184.28
+
+
+
+medina filtering:
+n1
+Input, Errors: 692.66 1982.10
+best, Errors:  5.00 91.99
+best, Errors:  3.00 8.78
+>> evalDenoising
+Input, Errors: 3118.10 3829.28
+best, Errors:  9.00 233.49
+best, Errors:  3.00 18.57
+
+
+Non local:
+
+noise1
+Input, Errors: 692.66 1982.10
+Input, Errors: g-292.63 sp-276.23
+
+patch=5X5
+window=11X11
+h=1
+
+Input, Errors: 3118.10 3829.28
+Input, Errors: 636.55 400.51 
+patch=5X5
+window=11X11
+h=1
+
+
+
+ 

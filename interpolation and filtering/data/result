@@ -1,0 +1,10 @@
+denoising
+:
+noise1 gaussian, s and p
+Input, Errors: 692.66 1982.10
+best, Errors: 11.00 6.00 181.45
+best, Errors: 11.00 6.00 190.25
+
+
+
+

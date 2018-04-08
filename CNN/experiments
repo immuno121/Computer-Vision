@@ -1,0 +1,144 @@
+Actual:
++++ Accuracy Table [trainSet=1, testSet=2]
+-------------------------------------
+dataset
+pixel hog
+lbp
+-------------------------------------
+digits-normal.mat 87.00 82.00 74.00
+digits-scaled.mat 77.40 79.00 74.00
+digits-jitter.mat 20.40 34.00 71.60
+
+
+
+
+
+
+
+
+
+HOG
+---------------------------------------------------
+dataset			pixel	hog	lbp	
+---------------------------------------------------
+digits-normal.mat	83.80	35.40	10.00	
+digits-scaled.mat	10.00	28.80	10.00	
+digits-jitter.mat	18.00	17.00	10.00	
+
+params:
+num bins=4(image was divided into 4*4)
+ori bins=9
+
+param.lambda = 0.01;  % Regularization term
+param.maxiter = 100; % Number of iterations
+param.eta = 0.01;
+
+
+
+---------------------------------------------------
+dataset			pixel	hog	lbp	
+---------------------------------------------------
+digits-normal.mat	83.80	37.80	10.00	
+digits-scaled.mat	10.00	27.80	10.00	
+digits-jitter.mat	18.80	16.80	10.00	
+
+
+
+params:
+num bins=4(image was divided into 4*4)
+ori bins=9
+
+param.lambda = 0.1;  % Regularization term
+param.maxiter = 200; % Number of iterations
+param.eta = 0.01;
+
+
+
+
+
+
+
+
+
+
+
+
+
+dataset			pixel	hog	lbp	
+---------------------------------------------------
+digits-normal.mat	87.40	89.00	10.00	
+digits-scaled.mat	80.60	88.20	10.00	
+digits-jitter.mat	20.00	33.00	10.00	
+>> 
++++ Accuracy Table [trainSet=1, testSet=2]
+---------------------------------------------------
+dataset			pixel	hog	lbp	
+---------------------------------------------------
+digits-normal.mat	86.60	89.00	10.00	
+digits-scaled.mat	82.20	88.40	10.00	
+digits-jitter.mat	20.20	34.00	10.00	
+
+
+
+
+
+
+
+
+
+
++++ Accuracy Table [trainSet=1, testSet=3]
+---------------------------------------------------
+dataset			pixel	hog	lbp	
+---------------------------------------------------
+digits-normal.mat	84.60	87.60	10.00	
+digits-scaled.mat	74.20	86.00	10.00	
+digits-jitter.mat	16.80	31.60	10.00	
+
+
+
+
++++ Accuracy Table [trainSet=1, testSet=3]
+---------------------------------------------------
+dataset			pixel	hog	lbp	
+---------------------------------------------------
+digits-normal.mat	82.60	87.80	10.00	
+digits-scaled.mat	50.40	86.20	10.00	
+digits-jitter.mat	21.00	32.20	10.00	
+>> 
+
+
++++ Accuracy Table [trainSet=1, testSet=2]
+---------------------------------------------------
+dataset			pixel	hog	lbp	
+---------------------------------------------------
+digits-normal.mat	86.60	88.20	43.60	
+digits-scaled.mat	39.60	87.00	24.40	
+digits-jitter.mat	22.40	32.80	32.00	
+>> 
+
+
+1000 itr:
++++ Accuracy Table [trainSet=1, testSet=2]
+---------------------------------------------------
+dataset			pixel	hog	lbp	
+---------------------------------------------------
+digits-normal.mat	87.40	89.00	45.40	
+digits-scaled.mat	80.60	88.20	24.60	
+digits-jitter.mat	20.00	33.20	35.20	
+
+
+
+CNN:
+TEST
+
+optimizer e^-3
+normal:92
+jitter:test accuracy 0.626
+scaled:test accuracy test accuracy 0.878
+
+
+VALIDATION
+normal:96
+jitter 65
+scaled: 88
